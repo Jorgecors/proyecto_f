@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento HTML con Título en Background</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        #titulo-background {
+            position: absolute;
+            top: 20px; /* Ajusta la posición vertical según necesites */
+            left: 50%; /* Centra horizontalmente */
+            transform: translateX(-50%);
+            font-size: 48px; /* Tamaño del texto */
+            color: white; /* Color del texto */
+            text-align: center; /* Centra el texto horizontalmente */
+            z-index: 1; /* Asegura que el título esté encima del formulario */
+            text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
+        }
+
+        #titulo-background:hover {
+            text-decoration: underline; /* Subraya el enlace cuando se pasa el cursor sobre él */
+        }
+    </style>
+</head>
+<body>
+
+<a id="titulo-background" href="index.html">VESTROC J&J</a><br> <br> <br> 
+
+<!-- Tu formulario -->
+<form id="msform">
+    <!-- progressbar -->
+    <ul id="progressbar">
+        <li class="active">Account Setup</li>
+        <li>Social Profiles</li>
+        <li>Personal Details</li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset>
+        <h6 class="fs-title"> <mark><h9>Formulario personalizacion</h9> </mark></h>
+        <h3 class="fs-subtitle"></h3>
+        <input type="text" name="email" placeholder="Nombre Completo" />
+        <input type="text" name="pass" placeholder="CC" />
+        <input type="text" name="cpass" placeholder="Direccion" />
+        <input type="text" name="cpass" placeholder="referencia estilo" />
+        <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <!-- Agrega más fieldsets según necesites -->
+</form>
+
+</body>
+</html>
